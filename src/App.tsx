@@ -1,3 +1,3 @@
 export default function App(): JSX.Element {
-    return <div></div>;
+    return <div>Hello world</div>;
 }
