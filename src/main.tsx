@@ -8,7 +8,7 @@ import App from "./App.tsx";
 ReactDOM.createRoot(document.getElementById("root")!, {
     identifierPrefix: "testing-app", // React useId doc
 }).render(
-    <React.StrictMode>
-        <App />
-    </React.StrictMode>
+    // <React.StrictMode>
+    <App />
+    // </React.StrictMode>
 );
