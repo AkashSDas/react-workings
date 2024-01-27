@@ -106,3 +106,19 @@ function Child2(): JSX.Element {
         </div>
     );
 }
+
+function Lifecycle(): JSX.Element {
+    var [show, setShow] = useState(false);
+
+    useInsertionEffect(function () {
+        console.log("[INSERTION EFFECT]");
+    }, []);
+
+    console.log("[RENDER]");
+
+    return (
+        <div>
+            <button onClick={() => setShow(!show)}>Toggle</button>
+        </div>
+    );
+}
